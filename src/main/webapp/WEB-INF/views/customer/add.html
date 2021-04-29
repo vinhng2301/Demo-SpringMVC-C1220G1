@@ -6,11 +6,13 @@
     <title>Add Customer</title>
 </head>
 <body>
-<form action="/create/customer" method="post">
+<form action="/createCustomer" method="post">
     <label>First Name</label>
     <input type="text" name="firstName" th:field="${creatCustomerForm.firstName}">
+    <td th:if="${#fields.hasErrors('creatCustomerForm.firstName')}" th:errors="*{creatCustomerForm.firstName}">First Name Error</td>
     <label>Last Name</label>
     <input type="text" name="lastName" th:field="${creatCustomerForm.lastName}">
+    <td th:if="${#fields.hasErrors('creatCustomerForm.lastName')}" th:errors="*{creatCustomerForm.lastName}">First Name Error</td>
     <select name="province">
         <option th:each="p:${listProvince}" th:value="${p.id}" th:utext="${p.name}"></option>
     </select>

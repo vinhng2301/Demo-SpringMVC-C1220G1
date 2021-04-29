@@ -1,9 +1,9 @@
-repository/IProvinceRepository.java
- repository.IProvinceRepository
 config/AppInit.java
  config.AppInit
-controller/CustomerController.java
- controller.CustomerController
+repository/IProvinceRepository.java
+ repository.IProvinceRepository
+formatter/ProvinceFormatter.java
+ formatter.ProvinceFormatter
 model/Customer.java
  model.Customer
 repository/ICustomerRepository.java
@@ -22,5 +22,5 @@ controller/ProvinceController.java
  controller.ProvinceController
 service/IProvinceService.java
  service.IProvinceService
-formatter/ProvinceFormatter.java
- formatter.ProvinceFormatter
+controller/CustomerController.java
+ controller.CustomerController
